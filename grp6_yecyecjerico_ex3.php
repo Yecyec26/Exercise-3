@@ -2,7 +2,7 @@
 $filePath = 'feedback.txt';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['newContent'])) {
-    $newContent = htmlspecialchars($_POST['newContent']) . "\n";
+    $newContent = htmlspecialchars($_POST['newContent']) . "\n\n";
 
     file_put_contents($filePath, $newContent, FILE_APPEND);
 
