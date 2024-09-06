@@ -49,7 +49,7 @@ if (file_exists($filePath)) {
     <div class="add-entry">
         <h2>Add Your Message</h2>
         <form action="" method="POST">
-            <textarea name="newContent" placeholder="Share your thoughts about our website..." required></textarea>
+            <textarea class="message-text" name="newContent" placeholder="Share your thoughts about our website..." required></textarea>
             <button type="submit" class="send">Submit</button>
         </form>
     </div>
