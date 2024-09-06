@@ -1,5 +1,5 @@
 <?php
-$filePath = 'data.txt';
+$filePath = 'feedback.txt';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['newContent'])) {
     $newContent = htmlspecialchars($_POST['newContent']) . "\n";
